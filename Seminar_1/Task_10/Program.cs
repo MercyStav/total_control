@@ -1,3 +1,4 @@
 ﻿Console.WriteLine("Введите трехзначное число.");
-string number = Console.ReadLine();
-Console.WriteLine(number[1]);
+int number = Convert.ToInt32(Console.ReadLine());
+string numberS = number.ToString ();
+Console.WriteLine(numberS[1]);
