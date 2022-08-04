@@ -8,4 +8,4 @@ string number = Console.ReadLine();
     Console.WriteLine($"Ваше число: {number} - палиндром.");
   }
   else Console.WriteLine($"Ваше число: {number} - НЕ палиндром.");
-}
+} 
