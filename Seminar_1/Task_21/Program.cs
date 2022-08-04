@@ -7,7 +7,7 @@ int z2 = Coordinate("z", "B");
 
 int Coordinate(string coorName, string pointName)
 {
-    Console.Write($"Введите координату {coorName} точки {pointName}: ");
+    Console.Write($"Введи координату {coorName} точки {pointName}: ");
     return Convert.ToInt32(Console.ReadLine());
 }
 
@@ -21,4 +21,4 @@ double Decision(double x1, double x2,
 
 double Length =  Math.Round (Decision(x1, x2, y1, y2, z1, z2), 2 );
 
-Console.WriteLine($"Расстояние:  {Length}");
+Console.WriteLine($"Расстояние между координатами:  {Length}");
