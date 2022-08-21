@@ -10,4 +10,3 @@ if (max > number3) { max = max; } else {max = number3;}
 {
     Console.Write($"Наибольшее из трёх чисел:        {max}");
 }
- 
