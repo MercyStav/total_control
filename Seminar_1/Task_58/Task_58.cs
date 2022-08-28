@@ -47,3 +47,4 @@ void WriteMass (int[,] Mass)
     Console.WriteLine();
   }
 }
+
