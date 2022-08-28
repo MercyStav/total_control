@@ -3,18 +3,14 @@ int[,] firstMartrix = new int[7, 7];
 CreateMass(firstMartrix);
 Console.WriteLine($"\nПервая матрица:");
 WriteMass(firstMartrix);
-
 int[,] twoMartrix = new int[7, 7];
 CreateMass(twoMartrix);
 Console.WriteLine($"\nВторая матрица:");
 WriteMass(twoMartrix);
-
 int[,] resultMatrix = new int[7,7];
-
 MultiplyMatrix(firstMartrix, twoMartrix, resultMatrix);
 Console.WriteLine($"\nПроизведение первой и второй матриц:");
 WriteMass(resultMatrix);
-
 void MultiplyMatrix(int[,] firstMartrix, int[,] twoMartrix, int[,] resultMatrix)
 {
   for (int i = 0; i < resultMatrix.GetLength(0); i++)
@@ -30,7 +26,6 @@ void MultiplyMatrix(int[,] firstMartrix, int[,] twoMartrix, int[,] resultMatrix)
     }
   }
 }
-
 void CreateMass(int[,] Mass)
 {
   for (int i = 0; i < Mass.GetLength(0); i++)
@@ -41,7 +36,6 @@ void CreateMass(int[,] Mass)
     }
   }
 }
-
 void WriteMass (int[,] Mass)
 {
   for (int i = 0; i < Mass.GetLength(0); i++)
