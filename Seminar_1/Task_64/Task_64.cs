@@ -1,16 +1,14 @@
 ﻿Console.Clear();
-int m = InputNumbers("Введите m: ");
-int n = InputNumbers("Введите n: ");
+int n = InputNumbers("Введи число, выведу все натуральные до него: ");
+int count = 2;
+PrintNumber(n, count);
+Console.Write(1);
 
-int Akkerman = Ack(m, n);
-
-Console.Write($"Функция Аккермана = {Akkerman} ");
-
-int Ack(int m, int n)
+void PrintNumber(int n, int count)
 {
-  if (m == 0) return n + 1;
-  else if (n == 0) return Ack(m - 1, 1);
-  else return Ack(m - 1, Ack(m, n - 1));
+  if (count > n) return;
+  PrintNumber(n, count + 1);
+  Console.Write(count + ", ");
 }
 
 int InputNumbers(string input) 
